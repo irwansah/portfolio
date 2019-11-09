@@ -161,7 +161,7 @@ body{
     margin: 10px auto;
     color: #444;
     border:1px solid #dbdbdb;
-    border-radius:10px;
+    border-radius:30px;
 }
 .nav-content-err{
     display: none;
@@ -193,7 +193,11 @@ a:hover {
     text-decoration: none;
 }
 #loadMore {
+    display: block;
+    width:100%;
+    margin: 10px 0;
     padding: 10px;
+    cursor: pointer;
     text-align: center;
     transition: all 600ms ease-in-out;
     -webkit-transition: all 600ms ease-in-out;
@@ -201,6 +205,11 @@ a:hover {
     -o-transition: all 600ms ease-in-out;
     background-color: #fff;
     color: #33739E;
+    border:none;
+    background: none;
+    text-align: center;
+    font-size:14pt;
+    
 }
 .swiper-button-next{
     max-width:20px;
