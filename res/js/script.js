@@ -4,7 +4,6 @@
 */   
 
 $(document).ready(function(){
-    
     $('.pop').hide();
     $(".content").slice(0, 6).show();
         $("#loadMore").on('click', function (e) {
@@ -59,6 +58,7 @@ $(document).ready(function(){
     });
     $(document).on('click', '.eye', function (e) {
         $('.pop').fadeIn();
+        var id=$(this).attr('data-id');
         var dsl1=$(this).attr('data-sl1');
         var dsl2=$(this).attr('data-sl2');
         var dsl3=$(this).attr('data-sl3');
@@ -86,6 +86,8 @@ $(document).ready(function(){
         // $('#slide5').css({
         //     "background-image":"url(content/images/"+dsl5+")"
         // });
+
+        $('#reqlink').attr('href','https://wa.me/6285814429029?text=Hai%21%2C%20saya%20ingin%20melihat%20demo%20website%20anda.%0A%0ARefID_'+id)
         $('#slidezoom1').attr('src','content/images/'+dsl1);
         $('#slidezoom2').attr('src','content/images/'+dsl2);
         $('#slidezoom3').attr('src','content/images/'+dsl3);

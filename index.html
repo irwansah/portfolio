@@ -37,12 +37,11 @@
     <div class="nav-cell"><h1 class="brand-name">Portfolio Irwansah</h1></div>
     <div class="nav-cell cell-left" ><a href="https://github.com/irwansah" target="_new" title="Github Profile"><img src="res/img/icon_github.svg" class="icon" alt="github icon"></a></div>
     <div class="nav-cell cell-left l5"><a href="http://wa.me/6285814429029" target="_new" title="Whatsapp Me"><img src="res/img/icon_message.svg" class="icon" alt="message icon"></a></div>
-    <div class="nav-cell cell-left l10"><a href="mail:irwansahrulsidik@gmail.com" target="_new" title="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
+    <div class="nav-cell cell-left l10"><a href="mailto:irwansahrulsidik@gmail.com" target="_new" title="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
   </nav>
 </header>
 
 <section class="project">
-  
   <!-- <div class="content" style="background-image:url(content/images/pph01.png)">
     <div class="content-wrap"></div>
     <div class="content-place">
@@ -117,6 +116,7 @@
             <h3>Tags.</h3>
             <p class="board-tags"></a></p>
             <br>
+            <p> request demo whatsapp : <a href="" id="reqlink">reqlink</a></p>
     
           </div>
     </div>
@@ -131,15 +131,19 @@
 <!-- partial -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $.getJSON('./data.json',function(data){                
-            var output="" 
+
+$.ajax({
+       url: './data.json',
+       dataType: 'json',
+       success: function(data) {
+        var output="" 
             var outslide=""
             $.each(data, function(key,val){
               output+= '<div class="content" style="background-image:url(\'content/images/'+val.img.img1+'\')">';
               output+= '<div class="content-wrap"></div>';
                 output+= '<div class="content-place">';
                     output+= '<div class="content-menu">';
-                    output+= '<a href="#" class="link icon eye" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'"  data-site="'+val.site+'" data-year="'+val.year+'" data-status="'+val.status+'"><img src="res/img/icon_eye.svg" alt="eye icon" title="Look"></a>';
+                    output+= '<a href="#" class="link icon eye" data-id="'+val.id+'" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'"  data-site="'+val.site+'" data-year="'+val.year+'" data-status="'+val.status+'"><img src="res/img/icon_eye.svg" alt="eye icon" title="Look"></a>';
                     if(val.status!="offline"){
                       output+= '<a href="'+val.site+'" class="link icon browse" target="_new"><img src="res/img/icon_chrome.svg" alt="chrome icon" title="Browse"></a>';                    
                     }else{
@@ -150,12 +154,16 @@
                     output+= '</div>';
               output+= '</div>';                
             });
-            output+='<div class="clear"></div> <nav class="nav-content"><a href="#" id="loadMore">Load More</a></nav><div class="nav-content-err"><p>Ups! No More.</p></div>'
+            output+='<div class="clear"></div> <nav class="nav-content"><a href="#" id="loadMore">Load More</a></nav><div class="nav-content-err"><p>Oops! sorry no more.</p></div>'
             $('.project').html(output);
+       }
+      });
+    // $.getJSON('./data.json',function(data){                
             
-        });
+            
+    //     });
         function offline(){
-          alert('sorry, website request  is offline, you can call me for live demo');
+          alert('sorry, website request is offline, you can call me for a live demo.');
         }
 </script>
   <script  src="res/js/script.js"></script>
@@ -173,6 +181,10 @@
       //   modifier: 1,
       //   slideShadows : true,
       // },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: true,
+      },
         grabCursor: false, 
         zoom: true,
         pagination: {

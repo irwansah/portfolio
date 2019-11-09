@@ -63,6 +63,7 @@ body{
     background-color: #f1f1f1;
     background-position: center;
     background-size: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     position: relative;
