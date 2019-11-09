@@ -2,7 +2,7 @@
 	Load more content with jQuery - May 21, 2013
 	(c) 2013 @ElmahdiMahmoud
 */   
-$(document).ready(function(){
+// $(document).ready(function(){
     $('.pop').hide();
     $(".content").slice(0, 6).show();
         $("#loadMore").on('click', function (e) {
@@ -19,7 +19,7 @@ $(document).ready(function(){
                 scrollTop: $(this).offset().top
             }, 1200);
         });
-        
+
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -100,4 +100,4 @@ $(document).ready(function(){
         
     });
 
-});
+// });
