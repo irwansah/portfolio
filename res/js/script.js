@@ -67,6 +67,8 @@ $(document).ready(function(){
         var title=$(this).attr('data-title');
         var desc=$(this).attr('data-desc');
         var tags=$(this).attr('data-tags');
+        var year=$(this).attr('data-year');
+        var status=$(this).attr('data-status');
 
         // $('#slide1').css({
         //     "background-image":"url(content/images/"+dsl1+")"
@@ -99,6 +101,7 @@ $(document).ready(function(){
         $('.board-title').html(title);
         $('.board-desc').html(desc);
         $('.board-tags').html(tags);
+        $('.board-year').html(year);
         
     });
 

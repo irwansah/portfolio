@@ -4,7 +4,9 @@
       "img":{
             "img1"  : "pph01.png",
             "img2"  : "pph02.png",
-            "img3"  : "pph03.png"
+            "img3"  : "pph03.png",
+            "img4"  : "pph04.png",
+            "img5"  : "pph05.png"
           },
       "title":"Aplikasi Penggajian Pegawai (PPH)",
       "desc":"CRUD Data Pegawai , Penggajian Pegawai, Laporan Penggajian",

@@ -132,6 +132,11 @@ body{
 .pop div{
     float: left;
 }
+.pop-content::after{
+    position:relative;
+    top:20px;
+    content: "* double click for zoom";
+}
 .pop .board{
     position:relative;
     width:280px;
@@ -195,12 +200,38 @@ a:hover {
     color: #33739E;
 }
 .swiper-button-next{
-    max-width:50px;
+    max-width:20px;
     max-height:20px;
     margin-right:20px;
+    background:#fff;
+    padding:5px;
+    border-radius:100%;
+    border:1px solid #dbdbdb;
+    
 }
 .swiper-button-prev{
-    max-width:50px;
+    position:relative;
+    max-width:20px;
     max-height:20px;
     margin-left:20px;
+    background:#fff;
+    padding:5px;
+    border-radius:100%;
+    border:1px solid #dbdbdb;
+}
+.swiper-button-next::after{
+    content: "\203A";
+    font-size:30pt;
+    position:relative;
+    top:-14px;
+    left:6px;
+    color:#dbdbdb;
+}
+.swiper-button-prev::after{
+    content: "\2039";
+    font-size:30pt;
+    position:relative;
+    top:-14px;
+    left:3px;
+    color:#dbdbdb;
 }
