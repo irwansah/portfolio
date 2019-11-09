@@ -34,7 +34,7 @@
 <header class="header">
   <nav class="nav-header">
     <div class="nav-cell"><img src="res/img/icon_package.svg" class="brand-icon" alt="package icon"></div>
-    <div class="nav-cell"><h1 class="brand-name">Portfolio Irwansah</h1></div>
+    <div class="nav-cell"><h1 class="brand-name" onclick="location.href='./'" style="cursor: pointer;">Portfolio Irwansah</h1></div>
     <div class="nav-cell cell-left" ><a href="https://github.com/irwansah" target="_new" title="Github Profile"><img src="res/img/icon_github.svg" class="icon" alt="github icon"></a></div>
     <div class="nav-cell cell-left l5"><a href="http://wa.me/6285814429029" target="_new" title="Whatsapp Me"><img src="res/img/icon_message.svg" class="icon" alt="message icon"></a></div>
     <div class="nav-cell cell-left l10"><a href="mailto:irwansahrulsidik@gmail.com" target="_new" title="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
@@ -155,6 +155,7 @@ $.ajax({
               output+= '</div>';                
             });
             output+='<div class="clear"></div> <nav class="nav-content"><a href="#" id="loadMore">Load More</a></nav><div class="nav-content-err"><p>Oops! sorry no more.</p></div>'
+            $('.project').html(output);
             $('.project').html(output);
        }
       });
