@@ -132,10 +132,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 
-$.ajax({
-       url: './data.json',
-       dataType: 'json',
-       success: function(data) {
+      $.ajax({
+        url: './data.json',
+        dataType: 'json',
+        success: function(data) {
         var output="" 
             var outslide=""
             $.each(data, function(key,val){
@@ -155,14 +155,10 @@ $.ajax({
               output+= '</div>';                
             });
             output+='<div class="clear"></div> <nav class="nav-content"><a href="#" id="loadMore">Load More</a></nav><div class="nav-content-err"><p>Oops! sorry no more.</p></div>'
-            $('.project').html(output);
-            $('.project').html(output);
-       }
+            $('.project').html(output).end().appendTo($('body'));        
+        }
       });
-    // $.getJSON('./data.json',function(data){                
-            
-            
-    //     });
+    // $.getJSON('./data.json',function(data){});
         function offline(){
           alert('sorry, website request is offline, you can call me for a live demo.');
         }
