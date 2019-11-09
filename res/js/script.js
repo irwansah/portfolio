@@ -4,8 +4,7 @@
 */   
 $(document).ready(function(){
     $('.pop').hide();
-    $(function(){
-        $(".content").slice(0, 6).show();
+    $(".content").slice(0, 6).show();
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
             $(".content:hidden").slice(0, 6).slideDown();
@@ -20,7 +19,7 @@ $(document).ready(function(){
                 scrollTop: $(this).offset().top
             }, 1200);
         });
-    });
+        
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
