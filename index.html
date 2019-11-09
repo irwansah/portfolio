@@ -128,9 +128,8 @@
 </p>
 <!-- partial -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script  src="res/js/script.js"></script>
-  <script  src="res/js/swiper.min.js"></script>
- <script>
+  <script>
+    $(document).ready(function(){
     $.getJSON('data.json',function(data){                
                 var output="" 
                 var outslide=""
@@ -150,7 +149,11 @@
                 $('.project').html(output);
                 
             });
- </script>
+          });
+  </script>
+  <script  src="res/js/script.js"></script>
+  <script  src="res/js/swiper.min.js"></script>
+ 
   <!-- Initialize Swiper -->
   <script>
       var swiper = new Swiper('.swiper-container', {
