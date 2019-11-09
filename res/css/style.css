@@ -211,6 +211,21 @@ a:hover {
     font-size:14pt;
     
 }
+.swiper-container {
+    background:#eee;
+    width: 898px;
+    height: 500px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-position:center center;
+    width: 700px;
+    height: 500px;
+  }
+  .swiper-slide {
+    overflow: hidden;
+  }
 .swiper-button-next{
     max-width:20px;
     max-height:20px;

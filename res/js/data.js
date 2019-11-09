@@ -1,4 +1,4 @@
-[
+var data=[
     {
         "id":"ID000",
         "img":{
@@ -195,4 +195,26 @@
    
     
     
-]
+];
+
+
+var output="" 
+var outslide=""
+$.each(data, function(key,val){
+    output+= '<div class="content" style="background-image:url(\'content/images/'+val.img.img1+'\')">';
+    output+= '<div class="content-wrap"></div>';
+    output+= '<div class="content-place">';
+        output+= '<div class="content-menu">';
+        output+= '<button class="link icon eye" data-id="'+val.id+'" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'"  data-site="'+val.site+'" data-year="'+val.year+'" data-status="'+val.status+'"><img src="res/img/icon_eye.svg" alt="eye icon" title="Look"></button>';
+        if(val.status!="offline"){
+            output+= '<a href="'+val.site+'" class="link icon browse" target="_new"><img src="res/img/icon_chrome.svg" alt="chrome icon" title="Browse"></a>';                    
+        }else{
+            output+= '<a href="#offline" class="link icon browse" onclick="return offline()"><img src="res/img/icon_chrome.svg" alt="chrome icon" title="Browse"></a>';                    
+        }
+        output+= '</div>';
+        output+= '<div class="content-desc">'+val.title+'</div>';
+        output+= '</div>';
+    output+= '</div>';                
+});
+output+='<div class="clear"></div> <nav class="nav-content"><button id="loadMore">Load More</button></nav><div class="nav-content-err"><p>Oops! sorry no more.</p></div>'
+$('.project').html(output);  

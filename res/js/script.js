@@ -70,23 +70,6 @@ $(document).ready(function(){
         var year=$(this).attr('data-year');
         var status=$(this).attr('data-status');
 
-        // $('#slide1').css({
-        //     "background-image":"url(content/images/"+dsl1+")"
-        // });
-        
-        // $('#slide2').css({
-        //     "background-image":"url(content/images/"+dsl2+")"
-        // });
-        // $('#slide3').css({
-        //     "background-image":"url(content/images/"+dsl3+")"
-        // });
-        // $('#slide4').css({
-        //     "background-image":"url(content/images/"+dsl4+")"
-        // });
-        // $('#slide5').css({
-        //     "background-image":"url(content/images/"+dsl5+")"
-        // });
-
         $('#reqlink').attr('href','https://wa.me/6285814429029?text=Hai%21%2C%20saya%20ingin%20melihat%20demo%20website%20anda.%0A%0ARefID_'+id)
         $('#slidezoom1').attr('src','content/images/'+dsl1);
         $('#slidezoom2').attr('src','content/images/'+dsl2);
