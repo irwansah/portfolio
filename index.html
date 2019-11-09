@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Irwansah</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="res/css/style.css">
+  <link rel="stylesheet" href="res/css/swiper.min.css">
+ <style>
+    .swiper-container {
+      background:#000;
+      width: 898px;
+      height: 500px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background-position:center center;
+      width: 700px;
+      height: 500px;
+    }
+    .swiper-slide {
+      overflow: hidden;
+    }
+    
+  </style>
+
+
+
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav-header">
+    <div class="nav-cell"><img src="res/img/icon_package.svg" class="brand-icon" alt="package icon"></div>
+    <div class="nav-cell"><h1 class="brand-name">Portfolio Irwansah</h1></div>
+    <div class="nav-cell cell-left" ><a href="https://github.com/irwansah" target="_new" title="Github Profile"><img src="res/img/icon_github.svg" class="icon" alt="github icon"></a></div>
+    <div class="nav-cell cell-left l5"><a href="http://wa.me/6285814429029" target="_new" title="Whatsapp Me"><img src="res/img/icon_message.svg" class="icon" alt="message icon"></a></div>
+    <div class="nav-cell cell-left l10"><a href="mail:irwansahrulsidik@gmail.com" target="_new" title="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
+  </nav>
+</header>
+
+<section class="project">
+  
+  <!-- <div class="content" style="background-image:url(content/images/pph01.png)">
+    <div class="content-wrap"></div>
+    <div class="content-place">
+        <div class="content-menu">
+
+            <a href="#" class="link">
+                <img src="res/img/icon_eye.svg" class="icon" alt="eye icon" title="Look">
+            </a>
+            <a href="#" class="link" target="_new">
+              <img src="res/img/icon_chrome.svg" class="icon" alt="chrome icon" title="Browse">
+            </a>
+        </div>
+        <div class="content-desc">SIPUS PHP</div>
+    </div>
+  
+  </div> -->
+  
+  <!-- <div class="clear"></div>  
+  <nav class="nav-content">
+      <a href="#" id="loadMore">Load More</a>
+    </nav>
+    <div class="nav-content-err">
+      <p>Ups! No More.</p>
+    </div> -->
+</section>
+ 
+<section class="pop">
+    <div class="pop-close">x</div>
+    <div class="pop-wrap"></div>
+    <div class="pop-content">
+        <div class="swiper-container" title="double click zoom in/out">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="slide1">
+                    <div class="swiper-zoom-container">
+                      <img id="slidezoom1" src="./">
+                    </div>
+              </div>
+              <div class="swiper-slide" id="slide2">
+                  <div class="swiper-zoom-container">
+                      <img id="slidezoom2" src="./">
+                    </div>
+              </div>
+              <div class="swiper-slide" id="slide3">
+                  <div class="swiper-zoom-container">
+                      <img id="slidezoom3" src="./">
+                    </div>
+              </div>
+              <div class="swiper-slide" id="slide4">
+                  <div class="swiper-zoom-container">
+                      <img id="slidezoom4" src="./">
+                    </div>
+              </div>
+              <div class="swiper-slide" id="slide5">
+                  <div class="swiper-zoom-container">
+                      <img id="slidezoom5" src="./">
+                    </div>
+              </div>
+            </div>
+           
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
+    
+          <div class="board">
+            <h2 class="board-title">Aplikasi</h2><br>
+            <h3>Deskripsi</h3>
+            <p class="board-desc"></p>
+            <br><br>
+            <h3>Tags.</h3>
+            <p class="board-tags"></p>
+            <br>
+    
+          </div>
+    </div>
+    
+</section>
+
+
+
+<p class="totop"> 
+    <a href="#top">Back to top</a> 
+</p>
+<!-- partial -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script  src="res/js/script.js"></script>
+  <script  src="res/js/swiper.min.js"></script>
+ <script>
+    $.getJSON('data.json',function(data){                
+                var output="" 
+                var outslide=""
+                $.each(data, function(key,val){
+                  output+= '<div class="content" style="background-image:url(\'content/images/'+val.img.img1+'\')">';
+                  output+= '<div class="content-wrap"></div>';
+                    output+= '<div class="content-place">';
+                        output+= '<div class="content-menu">';
+                        output+= '<a href="#" class="link eye" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'" data-site="'+val.site+'"><img src="res/img/icon_eye.svg" class="icon" alt="eye icon" title="Look"></a>';
+                        output+= '<a href="'+val.site+'" class="link" target="_new"><img src="res/img/icon_chrome.svg" class="icon" alt="chrome icon" title="Browse"></a>';
+                        output+= '</div>';
+                        output+= '<div class="content-desc">'+val.title+'</div>';
+                        output+= '</div>';
+                  output+= '</div>';                
+                });
+                output+='<div class="clear"></div> <nav class="nav-content"><a href="#" id="loadMore">Load More</a></nav><div class="nav-content-err"><p>Ups! No More.</p></div>'
+                $('.project').html(output);
+                
+            });
+ </script>
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+        grabCursor: false, 
+        zoom: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        mousewheel: true,
+        keyboard: true,
+        cssMode: true,
+      });
+    </script>
+
+
+</body>
+</html>

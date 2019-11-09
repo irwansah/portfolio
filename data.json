@@ -1,0 +1,107 @@
+[
+    {
+      "id":"ID001",
+      "img":{
+            "img1"  : "pph01.png",
+            "img2"  : "pph02.png",
+            "img3"  : "pph03.png"
+          },
+      "title":"Aplikasi Penggajian Pegawai (PPH)",
+      "desc":"CRUD Data Pegawai , Penggajian Pegawai, Laporan Penggajian",
+      "tags":"php,codeigniter,jquery,datatables",
+      "site":"http://pph.inovs.id" ,
+      "year":"2018",
+      "status":"offline"
+
+    },
+    {
+        "id":"ID002",
+        "img":{
+              "img1"  : "sipusfrontend01.png",
+              "img2"  : "sipusfrontend02.png",
+              "img3"  : "sipusfrontend03.png",
+              "img4"  : "sipusfrontend04.png",
+              "img5"  : "sipusfrontend05.png"
+            },
+        "title":"Sistem Informasi Perpustakaan (SIPUS) Front-End",
+        "desc":"Katalog, Pencarian Buku, Riwayat Peminjaman, Profil Anggota ",
+        "tags":"php,codeigniter,ajax,jquery",
+        "site":"http://sipus.inovs.id" ,
+        "year":"2019",
+        "status":"offline"
+      },
+      {
+        "id":"ID003",
+        "img":{
+              "img1"  : "sipusdashboard01.png",
+              "img2"  : "sipusdashboard02.png",
+              "img3"  : "sipusdashboard03.png",
+              "img4"  : "sipusdashboard04.png",
+              "img5"  : "sipusdashboard05.png"
+            },
+        "title":"Sistem Informasi Perpustakaan (SIPUS) Dashboard",
+        "desc":"Kelola Data Perpustakaan,Kelola Peminjaman & Pengembalian Buku, Riwayat Peminjaman, Hitung Denda ",
+        "tags":"php,codeigniter,ajax,jquery",
+        "site":"http://sipus.inovs.id/dashboard",
+        "year":"2019",
+        "status":"offline"
+      },
+      {
+        "id":"ID004",
+        "img":{
+              "img1"  : "atexpress01.png",
+              "img2"  : "atexpress02.png",
+              "img3"  : "atexpress03.png"
+            },
+        "title":"Website Ekspedisi AT Express",
+        "desc":"Sistem Penawaran Pengiriman Barang,Data Ekspedisi",
+        "tags":"php,codeigniter,jquery,datatables",
+        "site":"http://atexpress.inovs.id",
+        "year":"2018" ,
+        "status":"offline"
+      },
+      {
+        "id":"ID005",
+        "img":{
+              "img1"  : "coffeeshop01.png",
+              "img2"  : "coffeeshop02.png",
+              "img3"  : "coffeeshop03.png"
+            },
+        "title":"Website Coffee Shop & Pastry Order Online ",
+        "desc":"Sistem Pemesanan Online,Kelola Menu,Delivery",
+        "tags":"php,codeigniter,jquery,ajax,parallax",
+        "site":"http://coffeeshop.inovs.id" ,
+        "year":"2018",
+        "status":"offline"
+      },
+      {
+        "id":"ID006",
+        "img":{
+              "img1"  : "coffeeshop01.png",
+              "img2"  : "coffeeshop02.png",
+              "img3"  : "coffeeshop03.png"
+            },
+        "title":"Website Coffee Shop & Pastry Order Online ",
+        "desc":"Sistem Pemesanan Online,Kelola Menu,Delivery",
+        "tags":"php,codeigniter,jquery,ajax,parallax",
+        "site":"http://coffeeshop.inovs.id" ,
+        "year":"2019",
+        "status":"offline"
+      },
+      {
+        "id":"ID007",
+        "img":{
+              "img1"  : "coffeeshop01.png",
+              "img2"  : "coffeeshop02.png",
+              "img3"  : "coffeeshop03.png"
+            },
+        "title":"Website Coffee Shop & Pastry Order Online ",
+        "desc":"Sistem Pemesanan Online,Kelola Menu,Delivery",
+        "tags":"php,codeigniter,jquery,ajax,parallax",
+        "site":"http://coffeeshop.inovs.id" ,
+        "year":"2019",
+        "status":"offline"
+      }
+    
+    
+]
