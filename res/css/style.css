@@ -95,6 +95,9 @@ body{
 .content .content-place .content-menu .link{
     display: inline-block;
     margin:20px;
+    border: none;
+    background: none;
+    cursor: pointer;
     
 }
 

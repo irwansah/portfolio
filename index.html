@@ -116,7 +116,7 @@
             <h3>Tags.</h3>
             <p class="board-tags"></a></p>
             <br>
-            <p> request demo whatsapp : <a href="" id="reqlink">reqlink</a></p>
+            <p> request demo whatsapp : <a href="" id="reqlink" target="_new">reqlink</a></p>
     
           </div>
     </div>
@@ -143,7 +143,7 @@
               output+= '<div class="content-wrap"></div>';
                 output+= '<div class="content-place">';
                     output+= '<div class="content-menu">';
-                    output+= '<a href="#" class="link icon eye" data-id="'+val.id+'" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'"  data-site="'+val.site+'" data-year="'+val.year+'" data-status="'+val.status+'"><img src="res/img/icon_eye.svg" alt="eye icon" title="Look"></a>';
+                    output+= '<button class="link icon eye" data-id="'+val.id+'" data-sl1="'+val.img.img1+'" data-sl2="'+val.img.img2+'" data-sl3="'+val.img.img3+'" data-sl4="'+val.img.img4+'" data-sl5="'+val.img.img5+'" data-title="'+val.title+'" data-desc="'+val.desc+'" data-tags="'+val.tags+'"  data-site="'+val.site+'" data-year="'+val.year+'" data-status="'+val.status+'"><img src="res/img/icon_eye.svg" alt="eye icon" title="Look"></button>';
                     if(val.status!="offline"){
                       output+= '<a href="'+val.site+'" class="link icon browse" target="_new"><img src="res/img/icon_chrome.svg" alt="chrome icon" title="Browse"></a>';                    
                     }else{
