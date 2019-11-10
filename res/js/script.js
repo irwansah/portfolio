@@ -1,6 +1,9 @@
 /*
-	Load more content with jQuery - May 21, 2013
-	(c) 2013 @ElmahdiMahmoud
+	- Load more content with jQuery - May 21, 2013
+        (c) 2013 @ElmahdiMahmoud
+    
+    - Developing - Nov 4, 2019
+	    (c) 2019 @Irwansah
 */   
 
 $(document).ready(function(){
@@ -89,5 +92,8 @@ $(document).ready(function(){
         $('.board-year').html(year);
         
     });
+    function offline(){
+        alert('sorry, website request is offline, you can call me for a live demo.');
+      }
 
 });

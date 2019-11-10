@@ -7,21 +7,22 @@
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="res/css/swiper.min.css">
   <link rel="stylesheet" href="res/css/style.css">
+
 </head>
 <body>
 <header class="header">
   <nav class="nav-header">
     <div class="nav-cell"><img src="res/img/icon_package.svg" class="brand-icon" alt="package icon"></div>
     <div class="nav-cell"><h1 class="brand-name" onclick="location.href='./'" style="cursor: pointer;">Portfolio Irwansah</h1></div>
-    <div class="nav-cell cell-left" ><a href="https://github.com/irwansah" target="_new" title="Github Profile"><img src="res/img/icon_github.svg" class="icon" alt="github icon"></a></div>
-    <div class="nav-cell cell-left l5"><a href="http://wa.me/6285814429029" target="_new" title="Whatsapp Me"><img src="res/img/icon_message.svg" class="icon" alt="message icon"></a></div>
-    <div class="nav-cell cell-left l10"><a href="mailto:irwansahrulsidik@gmail.com" target="_new" title="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
+    <div class="nav-cell cell-left" ><a href="https://github.com/irwansah" target="_new" class="tooltip-bottom" data-tooltip="Github Profile" ><img src="res/img/icon_github.svg" class="icon" alt="github icon"></a></div>
+    <div class="nav-cell cell-left l5"><a href="http://wa.me/6285814429029" target="_new" class="tooltip-bottom" data-tooltip="Whatsapp Me"><img src="res/img/icon_message.svg" class="icon" alt="message icon" ></a></div>
+    <div class="nav-cell cell-left l10"><a href="mailto:irwansahrulsidik@gmail.com" target="_new" class="tooltip-bottom" data-tooltip="Send Me Mail"><img src="res/img/icon_mail.svg" class="icon" alt="mail icon"></a></div>
   </nav>
 </header>
 
-<section class="project"></section>
+<section class="project">{ Content}</section>
  
 <section class="pop">
     <div class="pop-close">x</div>
@@ -78,50 +79,15 @@
     
 </section>
 
-
-
 <p class="totop"> 
     <a href="#top">Back to top</a> 
 </p>
 
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="res/js/swiper.min.js"></script>
 <script src="res/js/data.js"></script>
 <script  src="res/js/script.js"></script>
-
- 
-<script>
-    function offline(){
-      alert('sorry, website request is offline, you can call me for a live demo.');
-    }
-</script>
-  
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'flip',
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: true,
-  },
-    grabCursor: false, 
-    zoom: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    mousewheel: true,
-    keyboard: true,
-    cssMode: true,
-  });
-</script>
-
+<script src="res/js/swipper.js"></script>
 
 </body>
 </html>
