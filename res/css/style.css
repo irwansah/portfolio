@@ -10,7 +10,7 @@ body{
     left:0px;
     background: white;
     z-index:99;
-    border-bottom:1px solid #dbdbdb;
+/*     border-bottom:1px solid #dbdbdb; */
 }
 .header .nav-header{
     position: relative;
