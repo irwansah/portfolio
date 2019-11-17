@@ -11,6 +11,7 @@ body{
     background: white;
     z-index:99;
 /*     border-bottom:1px solid #dbdbdb; */
+    border-bottom:1px solid #f0f0f0;
 }
 .header .nav-header{
     position: relative;
