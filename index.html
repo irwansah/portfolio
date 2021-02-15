@@ -2,13 +2,22 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Irwansah</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://irwansahrulsidik.com/portfolio" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Irwan Sahrul Sidik, Web Developer, Progammer" />
+  <meta property="og:description" content="Fulstack Web Developer, Pembuat Website dan Aplikasi, Pengalaman Lebih dari 4 Tahun." />
+  <meta property="og:url" content="https://irwansahrulsidik.com/portfolio" />
+  <meta property="og:site_name" content="Irwan Sahrul Sidik" />
+  <meta property="og:image" content="./res/img/icon_package.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="res/css/swiper.min.css">
   <link rel="stylesheet" href="res/css/style.css">
+  <link rel="stylesheet" href="res/css/responsive.css">
 
 </head>
 <body>
@@ -25,41 +34,43 @@
 <section class="project">{ Content}</section>
  
 <section class="pop">
-    <div class="pop-close">x</div>
+    <div class="pop-close">&#10006;</div>
     <div class="pop-wrap"></div>
     <div class="pop-content">
-        <div class="swiper-container" title="double click zoom in/out">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" id="slide1">
+          <div class="wipe">
+            <div class="swiper-container" title="double click zoom in/out">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="slide1">
+                      <div class="swiper-zoom-container">
+                        <img id="slidezoom1" src="./">
+                      </div>
+                </div>
+                <div class="swiper-slide" id="slide2">
                     <div class="swiper-zoom-container">
-                      <img id="slidezoom1" src="./">
-                    </div>
+                        <img id="slidezoom2" src="./">
+                      </div>
+                </div>
+                <div class="swiper-slide" id="slide3">
+                    <div class="swiper-zoom-container">
+                        <img id="slidezoom3" src="./">
+                      </div>
+                </div>
+                <div class="swiper-slide" id="slide4">
+                    <div class="swiper-zoom-container">
+                        <img id="slidezoom4" src="./">
+                      </div>
+                </div>
+                <div class="swiper-slide" id="slide5">
+                    <div class="swiper-zoom-container">
+                        <img id="slidezoom5" src="./">
+                      </div>
+                </div>
               </div>
-              <div class="swiper-slide" id="slide2">
-                  <div class="swiper-zoom-container">
-                      <img id="slidezoom2" src="./">
-                    </div>
-              </div>
-              <div class="swiper-slide" id="slide3">
-                  <div class="swiper-zoom-container">
-                      <img id="slidezoom3" src="./">
-                    </div>
-              </div>
-              <div class="swiper-slide" id="slide4">
-                  <div class="swiper-zoom-container">
-                      <img id="slidezoom4" src="./">
-                    </div>
-              </div>
-              <div class="swiper-slide" id="slide5">
-                  <div class="swiper-zoom-container">
-                      <img id="slidezoom5" src="./">
-                    </div>
-              </div>
+             
+              <div class="swiper-pagination swiper-pagination-white"></div>
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
             </div>
-           
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
           </div>
     
           <div class="board">
@@ -80,7 +91,7 @@
 </section>
 
 <p class="totop"> 
-    <a href="#top">Back to top</a> 
+    <a href="#top"><img src="./res/img/up-arrow.svg"></a> 
 </p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,0 +1,76 @@
+@media all and (max-width: 1000px) {
+    .project{
+        margin-top: 20px;
+        width:70%;
+        margin:auto;
+
+    }
+    .content{
+        width: 45%;
+        
+    }
+
+    .pop{
+        position: fixed;
+        width: 100%;
+        top:0px;
+        bottom:10px;
+        left:0px;
+        margin: auto;
+        z-index: 20;
+        margin-top: 40px;
+    }
+    .pop-close{
+        position: fixed;
+        top:5px;
+        z-index: 99;
+        /* background:rgba(26, 26, 26, 0.342);; */
+        border-radius: 100%;
+        width:30px;
+        height: 30px;
+        text-align: center;
+    }
+   
+    .wipe .swiper-container{
+      height: 300px;
+      width: 100%;
+      max-width:fit-content;
+      background: whitesmoke;
+    
+    }
+    .wipe img{
+      width: 100%;
+      max-width:fit-content;
+      margin-top:10px;
+    }
+    .board{
+      background: white;
+      padding: 20px;
+    }
+  }
+  
+/* Untuk Smartphone */
+@media all and (max-width: 760px) {
+    .nav-content{
+        width: 100%;
+        margin: 10px auto;
+        margin-bottom: 50px;
+    }
+    .header .nav-header{
+        position: relative;
+        width:100%;
+        margin:auto;
+    }
+    .project{
+        width: 80%;
+        margin-top: 100px;
+    }
+    .content{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+
+
+    }
+
+}
